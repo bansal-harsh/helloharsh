@@ -28,6 +28,7 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
+  padding-top: 88px;
 }
 
 a,
@@ -41,6 +42,50 @@ a:hover {
 
 .container-fluid {
   max-width: 1200px;
+}
+
+.tm-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(10px);
+}
+
+.tm-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.tm-navbar-brand,
+.tm-navbar-links a {
+  color: white;
+}
+
+.tm-navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.tm-navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.tm-navbar-links a {
+  font-size: 1rem;
+}
+
+.tm-navbar-links a:hover,
+.tm-navbar-brand:hover {
+  color: #98cb00;
 }
 
 .tm-bg-black-transparent {
@@ -150,6 +195,25 @@ a:hover {
 
 #tmPortfolio {
   padding-top: 80px;
+}
+
+.tm-section-anchor {
+  position: relative;
+  top: -110px;
+}
+
+.tm-section-heading {
+  margin-bottom: 36px;
+}
+
+.tm-section-heading h2 {
+  color: #2f2f2f;
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.tm-section-heading p {
+  margin-bottom: 0;
 }
 
 .tm-portfolio-item {
@@ -268,6 +332,11 @@ p {
   background-color: #676767;
 }
 
+.tm-contact-note {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
 .tm-copyright-text {
   margin-bottom: 30px;
 }
@@ -283,6 +352,21 @@ p {
 }
 
 @media (max-width: 991px) {
+  body {
+    padding-top: 118px;
+  }
+
+  .tm-navbar-inner {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .tm-navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 20px;
+  }
+
   .tm-contact-items-container {
     flex-direction: column;
   }
@@ -308,6 +392,14 @@ p {
 }
 
 @media (max-width: 730px) {
+  body {
+    padding-top: 132px;
+  }
+
+  .tm-section-heading h2 {
+    font-size: 1.8rem;
+  }
+
   .tm-portfolio-item {
     flex-direction: column;
   }
@@ -329,6 +421,10 @@ p {
 @media (max-width: 572px) {
   .tm-brand-container {
     padding: 45px;
+  }
+
+  body {
+    padding-top: 156px;
   }
 }
 
