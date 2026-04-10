@@ -28,7 +28,6 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
-  padding-top: 88px;
 }
 
 a,
@@ -45,7 +44,7 @@ a:hover {
 }
 
 .tm-navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -119,8 +118,6 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: -88px;
-  padding-top: 88px;
 }
 
 .tm-brand-container-outer {
@@ -354,15 +351,6 @@ p {
 }
 
 @media (max-width: 991px) {
-  body {
-    padding-top: 118px;
-  }
-
-  #tmWelcome {
-    margin-top: -118px;
-    padding-top: 118px;
-  }
-
   .tm-navbar-inner {
     flex-direction: column;
     gap: 14px;
@@ -399,15 +387,6 @@ p {
 }
 
 @media (max-width: 730px) {
-  body {
-    padding-top: 132px;
-  }
-
-  #tmWelcome {
-    margin-top: -132px;
-    padding-top: 132px;
-  }
-
   .tm-section-heading h2 {
     font-size: 1.8rem;
   }
@@ -433,15 +412,6 @@ p {
 @media (max-width: 572px) {
   .tm-brand-container {
     padding: 45px;
-  }
-
-  body {
-    padding-top: 156px;
-  }
-
-  #tmWelcome {
-    margin-top: -156px;
-    padding-top: 156px;
   }
 }
 
