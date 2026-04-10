@@ -28,6 +28,7 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
+  padding-top: 88px;
 }
 
 a,
@@ -44,7 +45,7 @@ a:hover {
 }
 
 .tm-navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -351,6 +352,10 @@ p {
 }
 
 @media (max-width: 991px) {
+  body {
+    padding-top: 118px;
+  }
+
   .tm-navbar-inner {
     flex-direction: column;
     gap: 14px;
@@ -387,6 +392,10 @@ p {
 }
 
 @media (max-width: 730px) {
+  body {
+    padding-top: 132px;
+  }
+
   .tm-section-heading h2 {
     font-size: 1.8rem;
   }
@@ -412,6 +421,10 @@ p {
 @media (max-width: 572px) {
   .tm-brand-container {
     padding: 45px;
+  }
+
+  body {
+    padding-top: 156px;
   }
 }
 
