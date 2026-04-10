@@ -119,11 +119,12 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 48px;
+  margin-top: -88px;
+  padding-top: 88px;
 }
 
 .tm-brand-container-outer {
-  width: 100%;
+  margin-top: -400px;
 }
 
 .tm-brand-container-inner {
@@ -144,7 +145,7 @@ a:hover {
 }
 
 .parallax-window {
-  min-height: calc(100vh - 88px);
+  min-height: 1100px;
   background: transparent;
 }
 
@@ -358,11 +359,8 @@ p {
   }
 
   #tmWelcome {
-    padding-top: 36px;
-  }
-
-  .parallax-window {
-    min-height: calc(100vh - 118px);
+    margin-top: -118px;
+    padding-top: 118px;
   }
 
   .tm-navbar-inner {
@@ -406,11 +404,8 @@ p {
   }
 
   #tmWelcome {
-    padding-top: 24px;
-  }
-
-  .parallax-window {
-    min-height: calc(100vh - 132px);
+    margin-top: -132px;
+    padding-top: 132px;
   }
 
   .tm-section-heading h2 {
@@ -444,8 +439,9 @@ p {
     padding-top: 156px;
   }
 
-  .parallax-window {
-    min-height: calc(100vh - 156px);
+  #tmWelcome {
+    margin-top: -156px;
+    padding-top: 156px;
   }
 }
 
