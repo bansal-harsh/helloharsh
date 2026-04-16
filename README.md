@@ -1,1 +1,4 @@
-This is readme file for the my website
+This is a readme file for my website.
+-Work exp
+-Projects
+-Resume
