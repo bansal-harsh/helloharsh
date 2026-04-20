@@ -3,3 +3,4 @@ www.halloharsh.com
 -Work exp
 -Projects
 -Resume
+-Contact
