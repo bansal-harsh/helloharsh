@@ -4,6 +4,3 @@ www.halloharsh.com
 -Projects
 -Resume
 -Contact
-Action Items to Update:
--- Projects
--- Resume
