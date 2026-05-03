@@ -1,5 +1,5 @@
 This is a readme file for my website.
-[https://helloharsh.com](https://helloharsh.com)
+[https://halloharsh.com](https://halloharsh.com)
 -Work exp
 -Projects
 -Resume
