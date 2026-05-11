@@ -4,5 +4,3 @@ This is a readme file for my website.
 -Projects
 -Resume
 -Contact
-,nb vskdjBVhadsf;kjbdafP
- bl
