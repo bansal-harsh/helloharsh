@@ -24,5 +24,5 @@ SnapCut AI is an AI-powered image background remover that helps users upload ima
 Open `index.html` directly in a browser, or serve the folder with any static file server:
 
 ```sh
-python3 -m http.server
+**python3 -m http.server**
 ```
