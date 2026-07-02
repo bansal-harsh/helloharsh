@@ -4,6 +4,10 @@ Personal portfolio website for Harsh Bansal, hosted at [halloharsh.com](https://
 
 Last updated: June 10, 2026
 
+## Maintenance Log
+
+- July 2, 2026: Reviewed the portfolio README and confirmed the live site overview, sections, and project summary remain current.
+
 ## About
 
 This static portfolio highlights my software engineering experience, featured projects, resume, and contact information. It is built with plain HTML, CSS, JavaScript, Bootstrap, jQuery, and the TemplateMo Mini Profile theme.
