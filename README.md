@@ -6,6 +6,7 @@ Last updated: June 10, 2026
 
 ## Maintenance Log
 
+- August 6, 2026: Reviewed the README setup notes and verified the portfolio run instructions are still accurate.
 - August 4, 2026: Confirmed the portfolio sections and contact details remain aligned with the current site.
 - July 23, 2026: Reviewed the portfolio overview and confirmed the featured project information remains up to date.
 - July 18, 2026: Reviewed the portfolio documentation and verified the featured project description remains accurate.
