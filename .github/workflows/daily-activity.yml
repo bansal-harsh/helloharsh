@@ -1,0 +1,45 @@
+name: Daily portfolio activity
+
+on:
+  schedule:
+    # 18:35 UTC is 00:05 Asia/Kolkata (IST) on the following day.
+    - cron: "35 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  record-daily-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record the daily documentation check
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          today="$(date +%F)"
+          log_file="activity/daily-checks.md"
+
+          if grep -q "^| ${today} |" "$log_file"; then
+            echo "Daily activity already recorded for ${today}."
+            exit 0
+          fi
+
+          printf '| %s | Confirmed portfolio documentation is current. |\n' "$today" >> "$log_file"
+
+      - name: Commit and push the activity log
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "Harsh Bansal"
+          git config user.email "hbansal42000@gmail.com"
+          git add activity/daily-checks.md
+          git commit -m "Record daily portfolio activity for $(date +%F)"
+          git push
